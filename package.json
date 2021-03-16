@@ -1,0 +1,35 @@
+{
+  "name": "mintbean-byob-test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/index.css css/index.css",
+    "build-cleancss": "cleancss -o css/index.min.css css/index.css",
+    "build-sass": "node-sass --output-style expanded --source-map true index.scss css/index.css",
+
+    "clean": "rimraf css",
+
+    "deploy": "npm run clean && npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khnghle/mintbean-byob.git"
+  },
+  "author": "Khuong Le & Chris DiPiero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khnghle/mintbean-byob/issues"
+  },
+  "homepage": "https://github.com/khnghle/mintbean-byob#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1",
+    "rimraf": "^3.0.2"
+  }
+}

@@ -1,0 +1,12 @@
+header {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  background: white;
+  text-color: blue;
+}
+
+/*# sourceMappingURL=index.css.map */
