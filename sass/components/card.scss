@@ -1,5 +1,23 @@
+@import '../variables';
+@import '../mixin';
+
 header {
+  @include flexCenter(column);
+
   background : lightblue;
-  display : flex;
-  justify-content : center;
+  color: $textColor;
+  height: 100vh;
+
+  button {
+    background: $primaryBtn;
+    //focus hover after 
+    &:hover {
+      background: red;
+    }
+  }
+}
+
+.contact {
+  @extend header;
+  background: lightcoral;
 }
