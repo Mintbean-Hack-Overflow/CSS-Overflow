@@ -1,0 +1,41 @@
+@import '../mixin';
+@import '../variables';
+
+body {
+
+}
+
+.pg-full{
+  width:100vw;
+  height: 100vh;
+  left:0;
+}
+
+.center-div {
+  @include flexCenter(row, center, center)
+}
+
+.intro {
+  @extend .center-div;
+  @extend .pg-full;
+  background: $bg-intro;
+  position:absolute;
+}
+
+.tech-stack {
+  @extend .center-div;
+  @extend .pg-full;
+  background: $bg-technologies;
+  position:absolute;
+
+}
+
+.about {
+  @extend .center-div;
+  @extend .pg-full;
+  background: $bg-about;
+  position:absolute;
+
+}
+
+
