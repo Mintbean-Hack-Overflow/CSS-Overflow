@@ -1,23 +1,106 @@
 @import '../variables';
 @import '../mixin';
+@import '../sizing/sizing';
 
-header {
-  @include flexCenter(column);
+.profile-card {
+  @include flexCenter(column, center, center);
+  background-color: $secondary;
+  @include padding($padding-md);
+  padding-bottom: 3em;
+  @include margin($margin-sm);
+  @include width($width-sm);
+  position: relative;
+  overflow: hidden;
 
-  background : lightblue;
-  color: $textColor;
-  height: 100vh;
 
-  button {
-    background: $primaryBtn;
-    //focus hover after 
-    &:hover {
-      background: red;
+  .profile-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .title {
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  .description {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .socials {
+    position: absolute;
+    visibility: hidden;
+    bottom: -100px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    background-color: $primary;
+    text-align: center;
+    
+    
+    div {
+      display: inline-block;
+      padding: 5px;
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+      
+      a {
+        display: block;
+        font-size: 17px;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+        color: white;
+      }
+
+      &:hover{
+        background-color: $alternate;
+      }
+    }
+  }
+
+  &:hover{
+    .socials{
+      bottom: 0;
+      visibility: visible;
+    }
+
+    .profile-image{
+      box-shadow: 0 0 0 10px $primary;
+      transform: scale(0.9)
     }
   }
 }
 
-.contact {
-  @extend header;
-  background: lightcoral;
+.card {
+  @include flexCenter(column, center, flex-start);
+  background: $card-bg;
+  border: 1px solid $primary;
+  border-radius: 10px;
+}
+
+.card-sm {
+  @extend .card;
+  @include padding($padding-sm);
+  @include width($width-sm);
+}
+
+.card-md {
+  @extend .card;
+  @include padding($padding-md);
+  @include width($width-md);
+}
+
+.card-lg {
+  @extend .card;
+  @include padding($padding-lg);
+  @include width($width-lg);
 }
