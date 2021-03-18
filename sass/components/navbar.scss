@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../mixin';
+@import '../sizing/sizing';
+
+.header {
+  background-color: purple;
+  // background-color: $alternate;
+  // padding: 1em $contentwidth;
+  // width: 100%;
+  // height: $headerheight;
+  // position: fixed;
+  // top: 0;
+}
+
+// .logo {
+//   color: $secondary;
+//   font-size: $headerheight * 0.65;
+//   display: inline-block;
+//   position: absolute;
+//   left: $contentwidth;
+// }
+
+// .headtext {
+//   color: $secondary;
+//   font-size: $headerheight * 0.6;
+//   width: 100%;
+//   display: inline-block;
+//   text-align: center;
+// }
+
+// .menu {
+//   align-items: center;
+//   height: inherit;
+//   position: absolute;
+//   right: $contentwidth;
+//   top: 0;
+// }
+
+// .menuburger {
+//   font-size: $headerheight * 0.5;
+//   position: absolute;
+//   top: $headerheight * 0.05;
+//   right: 0;
+// }
+
+// .menu-ul {
+//   max-block-size: 0px;
+//   color: $secondary;
+//   position: absolute;
+//   top: $headerheight * 0.75;
+//   right: 1.5em;
+// }
