@@ -3,13 +3,13 @@ This is a project created within Mintbean's hackathon. The goal is to create a l
 
 # Installation
 ```
-npm install mintbean-byob-test2 --save
+npm install mintbean-css-flow --save
 ```
 # Import 
 After installation, you can import the CSS file into your project with this snippet
 
 ```
-@import 'mintbean-byob-test2/css/index.css'
+@import 'mintbean-css-overflow/css'
 
 ```
 ## Flex-box shortcuts

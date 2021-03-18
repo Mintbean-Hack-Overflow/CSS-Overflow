@@ -148,4 +148,32 @@
   align-items: stretch;
 }
 
+.pg-full, .intro, .tech-stack, .about {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+}
+
+.center-div, .intro, .tech-stack, .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.intro {
+  background: lightblue;
+  position: absolute;
+}
+
+.tech-stack {
+  background: lightgreen;
+  position: absolute;
+}
+
+.about {
+  background: #dca1a1;
+  position: absolute;
+}
+
 /*# sourceMappingURL=index.css.map */
