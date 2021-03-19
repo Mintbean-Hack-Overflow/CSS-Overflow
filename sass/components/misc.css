@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pg-full, .intro, .tech-stack, .about {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+}
+
+.center-div, .intro, .tech-stack, .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.intro {
+  background: lightblue;
+  position: absolute;
+}
+
+.tech-stack {
+  background: lightgreen;
+  position: absolute;
+}
+
+.about {
+  background: #dca1a1;
+  position: absolute;
+}
+/*# sourceMappingURL=misc.css.map */
